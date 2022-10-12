@@ -7,6 +7,7 @@ const Cart = ({cart}) => {
             <h4>Order summary</h4>
             <p>Selected Items: {cart.length}</p>
             <h3>cart tumi aso</h3>
+            <h4>hello man</h4>
         </div>
     );
 };

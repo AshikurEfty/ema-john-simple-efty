@@ -1,0 +1,12 @@
+.cart{
+    position: sticky;
+    top:0px;
+    padding: 30px 20px;
+}
+.cart h4{
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+}
+.cart p{
+    font-family: 'Roboto Condensed';
+}

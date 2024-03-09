@@ -2,8 +2,9 @@ import React from 'react';
 import './Cart.css'
 
 const Cart = (props) => { 
-    const {cart} = props;
-    console.log(cart);
+    const {cart,clearCart,children} = props;
+
+
     let total = 0 ;
     let shipping = 0;
     let quantity = 0; 
@@ -22,10 +23,12 @@ const Cart = (props) => {
         <div className='cart'>
             <h4>Order summary</h4>
             <p>Selected Items: {quantity}</p>
-            <p>Total Price: ${total}</p>
+            <p>Total Total Price: ${total}</p>
             <p>Total Shipping: {shipping}</p>
             <p>Tax: {tax}</p>
             <p>Grand Total: {grandTotal}</p>
+            <button onClick={clearCart}>ClearCart</button>
+            {children}
         </div>
     );
 };
